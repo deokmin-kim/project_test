@@ -1,6 +1,56 @@
 {% extends 'base.html' %}
+<!--{%load static %}-->
+<!--{% load django_bootstrap5 %}-->
+
 
 {% block content %}
-<h1>Welcome to Our Online Store</h1>
-<!-- 이곳에 메인 페이지 내용 추가 -->
-{% endblock content %}
+	 <div class="container">
+		<div class="mainSlide">	<!-- width 100% -->
+			<img src="{% static 'images/slide.jpg' %}" alt="">
+		</div>
+	 </div>
+
+     <div class="content">
+	    <section class="bannerWrap">
+		  <h2 class="hidden">banner 영역</h2>
+		  <ul>
+			  <li><a href="#"><img src="{% static 'images/banner1.jpg' %}" alt=""></a></li>
+			  <li><a href="#"><img src="{% static 'images/banner2.jpg' %}" alt="당일배송"></a></li>
+			  <li><a href="#"><img src="{% static 'images/banner3.jpg' %}" alt=""></a></li>
+			  <li><a href="#"><img src="{% static 'images/banner4.jpg' %}" alt="당일배송"></a></li>
+		  </ul>
+	    </section>
+
+		<section class="productWrap">
+				<h2>BEST ITEMS</h2>
+				<P>이번 한 주간 인기상품을 확인해보세요</P>
+				<ul>
+					<li><a href="#"><img src="{% static 'images/product1.gif' %}" alt="에트로 원피스"></a></li>
+					<li><a href="#"><img src="{% static 'images/product2.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product1.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product2.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+				</ul>
+		</section>
+
+		 <section class="productWrap">
+				<h2>NEW ITEMS</h2>
+				<P>이번 한 주간 신규상품을 확인해보세요</P>
+				<ul>
+					<li><a href="#"><img src="{% static 'images/product1.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product2.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product1.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product2.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+					<li><a href="#"><img src="{% static 'images/product3.gif' %}" alt=""></a></li>
+				</ul>
+		 </section>
+		</div>
+
+
+{% endblock %}
