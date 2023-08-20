@@ -4,7 +4,7 @@ from .models import Product, ImageUpload
 from .forms import ImageUploadForm
 
 def main_page(request):
-    return render(request, 'product/home.html')
+    return render(request, 'product/index.html')
 
 def product_list(request):
     products = Product.objects.all()
